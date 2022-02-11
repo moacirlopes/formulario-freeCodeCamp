@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Texto em cima-->
+      <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+      <!-- Formulario -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="Name">Nome</label> <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Digite seu Nome"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label> <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Digite seu Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Idade">Idade(opcional)</label> <br />
+          <input
+            type="text"
+            name="age"
+            id="age"
+            class="form-control"
+            placeholder="Digite sua idade"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Qual opção melhor descreve sua função atual?</p>
+          <select name="role" id="dropdown">
+            <option disabled selected value="">Selecione a função atual</option>
+            <option value="student">Estudante</option>
+            <option value="fulltimejob">Trabalho em tempo integral</option>
+            <option value="fulltimeleaner">Aprendiz em tempo integral</option>
+            <option value="prefernot">prefiro não dizer</option>
+            <option value="other">Outros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+          <label for=""
+            ><input
+              type="radio"
+              name="user-recomend"
+              value="definitely"
+              class="input-radio"
+            />Com certeza</label
+          >
+          <br />
+          <label for=""
+            ><input
+              type="radio"
+              name="user-maybe"
+              value="maybe"
+              class="input-radio"
+            />Pode ser</label
+          >
+          <br />
+          <label for=""
+            ><input
+              type="radio"
+              name="user-notsure"
+              value="user-notsure"
+              class="input-radio"
+            />Não tenho certeza</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+          <select name="role" value="dropdown">
+            <option disabled selected value>Selecione a opção</option>
+            <option value="desafios">Desafios</option>
+            <option value="projetos">Projetos</option>
+            <option value="comunidade">Comunidade</option>
+            <option value="codigoaberto">Codigo Aberto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            O que você gostaria de ver melhorado? (Marque todos os que se
+            aplicam)
+          </p>
+          <input
+            type="checkbox"
+            name="frontendprojetocs"
+            class="input-checkbox"
+          />Projetos front-end <br />
+          <input
+            type="checkbox"
+            name="backendprojetocs"
+            class="input-checkbox"
+          />Projetos back-end <br />
+
+          <input
+            type="checkbox"
+            name="Visualização-de-dados"
+            class="input-checkbox"
+          />Visualização de dados <br />
+
+          <input
+            type="checkbox"
+            name="desafios"
+            class="input-checkbox"
+          />Desafios <br />
+          <input
+            type="checkbox"
+            name="Comunidade-de-código-abertos"
+            class="input-checkbox"
+          />Comunidade de código aberto <br />
+          <input
+            type="checkbox"
+            name="Comunidade-e-código-abertos"
+            class="input-checkbox"
+          />Salas de ajuda do Gitter <br />
+          <input type="checkbox" name="Videos" class="input-checkbox" />Videos
+          <br />
+          <input
+            type="checkbox"
+            name="Encontros-da-Cidade"
+            class="input-checkbox"
+          />Encontros da Cidade <br />
+          <input type="checkbox" name="Wiki" class="input-checkbox" />Wiki
+          <br />
+          <input type="checkbox" name="Forum" class="input-checkbox" />Forum
+          <br />
+          <input
+            type="checkbox"
+            name="cursos-adiconais"
+            class="input-checkbox"
+          />Cursos Adicionais <br />
+        </div>
+
+        <div class="form-group">
+          <p>Algum comentário ou sugestão?</p>
+          <textarea
+            id="comments"
+            name="comment"
+            class="input-textarea"
+            cols="30"
+            rows="10"
+          >
+ Digite seu comentário aqui... </textarea
+          >
+          <br />
+        </div>
+        <div class="form-group">
+          <button type="submit">Se-inscrever</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
